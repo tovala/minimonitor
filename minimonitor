@@ -17,4 +17,4 @@ if [[ ! -z "$ESPPORT" ]]; then
   port="-p $ESPPORT"
 fi
 
-python3 minimonitor.py $port $args
+python3 minimonitor.py $port $*
