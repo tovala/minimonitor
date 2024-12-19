@@ -1,0 +1,1 @@
+esp_idf_monitor==1.5.0
