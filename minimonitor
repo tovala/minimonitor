@@ -11,9 +11,7 @@ if [[ -z "$VIRTUAL_ENV" ]]; then
 fi
 
 if [[ ! -z "$ESPPORT" ]]; then
-  args="-p $ESPPORT"
-else
-  args="$*"
+  port="-p $ESPPORT"
 fi
 
-python3 minimonitor.py $args
+python3 minimonitor.py $port $args
