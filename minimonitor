@@ -3,6 +3,8 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
 
+set -x
+
 if [[ ! -d venv ]]; then
   python3 -m venv venv
   source venv/bin/activate
